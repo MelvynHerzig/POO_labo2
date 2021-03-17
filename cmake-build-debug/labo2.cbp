@@ -82,7 +82,55 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/Squadron.cpp">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/Squadron.h">
+			<Option target="labo2"/>
+		</Unit>
 		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/main.cpp">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/Ship.cpp">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/Ship.h">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/Cargo.cpp">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/Cargo.h">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/Shuttle.cpp">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/Shuttle.h">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/StarDestroyer.cpp">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/StarDestroyer.h">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/fighter/Fighter.cpp">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/fighter/Fighter.h">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/fighter/TIEIN.cpp">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/fighter/TIEIN.h">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/fighter/TIELN.cpp">
+			<Option target="labo2"/>
+		</Unit>
+		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/fighter/TIELN.h">
 			<Option target="labo2"/>
 		</Unit>
 		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/CMakeLists.txt">

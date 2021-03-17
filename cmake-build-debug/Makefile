@@ -142,6 +142,33 @@ labo2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/build
 .PHONY : labo2/fast
 
+Squadron.obj: Squadron.cpp.obj
+
+.PHONY : Squadron.obj
+
+# target to build an object file
+Squadron.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/Squadron.cpp.obj
+.PHONY : Squadron.cpp.obj
+
+Squadron.i: Squadron.cpp.i
+
+.PHONY : Squadron.i
+
+# target to preprocess a source file
+Squadron.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/Squadron.cpp.i
+.PHONY : Squadron.cpp.i
+
+Squadron.s: Squadron.cpp.s
+
+.PHONY : Squadron.s
+
+# target to generate assembly for a file
+Squadron.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/Squadron.cpp.s
+.PHONY : Squadron.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -169,6 +196,195 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+ships/Ship.obj: ships/Ship.cpp.obj
+
+.PHONY : ships/Ship.obj
+
+# target to build an object file
+ships/Ship.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/Ship.cpp.obj
+.PHONY : ships/Ship.cpp.obj
+
+ships/Ship.i: ships/Ship.cpp.i
+
+.PHONY : ships/Ship.i
+
+# target to preprocess a source file
+ships/Ship.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/Ship.cpp.i
+.PHONY : ships/Ship.cpp.i
+
+ships/Ship.s: ships/Ship.cpp.s
+
+.PHONY : ships/Ship.s
+
+# target to generate assembly for a file
+ships/Ship.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/Ship.cpp.s
+.PHONY : ships/Ship.cpp.s
+
+ships/cargo/Cargo.obj: ships/cargo/Cargo.cpp.obj
+
+.PHONY : ships/cargo/Cargo.obj
+
+# target to build an object file
+ships/cargo/Cargo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/cargo/Cargo.cpp.obj
+.PHONY : ships/cargo/Cargo.cpp.obj
+
+ships/cargo/Cargo.i: ships/cargo/Cargo.cpp.i
+
+.PHONY : ships/cargo/Cargo.i
+
+# target to preprocess a source file
+ships/cargo/Cargo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/cargo/Cargo.cpp.i
+.PHONY : ships/cargo/Cargo.cpp.i
+
+ships/cargo/Cargo.s: ships/cargo/Cargo.cpp.s
+
+.PHONY : ships/cargo/Cargo.s
+
+# target to generate assembly for a file
+ships/cargo/Cargo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/cargo/Cargo.cpp.s
+.PHONY : ships/cargo/Cargo.cpp.s
+
+ships/cargo/Shuttle.obj: ships/cargo/Shuttle.cpp.obj
+
+.PHONY : ships/cargo/Shuttle.obj
+
+# target to build an object file
+ships/cargo/Shuttle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/cargo/Shuttle.cpp.obj
+.PHONY : ships/cargo/Shuttle.cpp.obj
+
+ships/cargo/Shuttle.i: ships/cargo/Shuttle.cpp.i
+
+.PHONY : ships/cargo/Shuttle.i
+
+# target to preprocess a source file
+ships/cargo/Shuttle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/cargo/Shuttle.cpp.i
+.PHONY : ships/cargo/Shuttle.cpp.i
+
+ships/cargo/Shuttle.s: ships/cargo/Shuttle.cpp.s
+
+.PHONY : ships/cargo/Shuttle.s
+
+# target to generate assembly for a file
+ships/cargo/Shuttle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/cargo/Shuttle.cpp.s
+.PHONY : ships/cargo/Shuttle.cpp.s
+
+ships/cargo/StarDestroyer.obj: ships/cargo/StarDestroyer.cpp.obj
+
+.PHONY : ships/cargo/StarDestroyer.obj
+
+# target to build an object file
+ships/cargo/StarDestroyer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/cargo/StarDestroyer.cpp.obj
+.PHONY : ships/cargo/StarDestroyer.cpp.obj
+
+ships/cargo/StarDestroyer.i: ships/cargo/StarDestroyer.cpp.i
+
+.PHONY : ships/cargo/StarDestroyer.i
+
+# target to preprocess a source file
+ships/cargo/StarDestroyer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/cargo/StarDestroyer.cpp.i
+.PHONY : ships/cargo/StarDestroyer.cpp.i
+
+ships/cargo/StarDestroyer.s: ships/cargo/StarDestroyer.cpp.s
+
+.PHONY : ships/cargo/StarDestroyer.s
+
+# target to generate assembly for a file
+ships/cargo/StarDestroyer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/cargo/StarDestroyer.cpp.s
+.PHONY : ships/cargo/StarDestroyer.cpp.s
+
+ships/fighter/Fighter.obj: ships/fighter/Fighter.cpp.obj
+
+.PHONY : ships/fighter/Fighter.obj
+
+# target to build an object file
+ships/fighter/Fighter.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.obj
+.PHONY : ships/fighter/Fighter.cpp.obj
+
+ships/fighter/Fighter.i: ships/fighter/Fighter.cpp.i
+
+.PHONY : ships/fighter/Fighter.i
+
+# target to preprocess a source file
+ships/fighter/Fighter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.i
+.PHONY : ships/fighter/Fighter.cpp.i
+
+ships/fighter/Fighter.s: ships/fighter/Fighter.cpp.s
+
+.PHONY : ships/fighter/Fighter.s
+
+# target to generate assembly for a file
+ships/fighter/Fighter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.s
+.PHONY : ships/fighter/Fighter.cpp.s
+
+ships/fighter/TIEIN.obj: ships/fighter/TIEIN.cpp.obj
+
+.PHONY : ships/fighter/TIEIN.obj
+
+# target to build an object file
+ships/fighter/TIEIN.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/fighter/TIEIN.cpp.obj
+.PHONY : ships/fighter/TIEIN.cpp.obj
+
+ships/fighter/TIEIN.i: ships/fighter/TIEIN.cpp.i
+
+.PHONY : ships/fighter/TIEIN.i
+
+# target to preprocess a source file
+ships/fighter/TIEIN.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/fighter/TIEIN.cpp.i
+.PHONY : ships/fighter/TIEIN.cpp.i
+
+ships/fighter/TIEIN.s: ships/fighter/TIEIN.cpp.s
+
+.PHONY : ships/fighter/TIEIN.s
+
+# target to generate assembly for a file
+ships/fighter/TIEIN.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/fighter/TIEIN.cpp.s
+.PHONY : ships/fighter/TIEIN.cpp.s
+
+ships/fighter/TIELN.obj: ships/fighter/TIELN.cpp.obj
+
+.PHONY : ships/fighter/TIELN.obj
+
+# target to build an object file
+ships/fighter/TIELN.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/fighter/TIELN.cpp.obj
+.PHONY : ships/fighter/TIELN.cpp.obj
+
+ships/fighter/TIELN.i: ships/fighter/TIELN.cpp.i
+
+.PHONY : ships/fighter/TIELN.i
+
+# target to preprocess a source file
+ships/fighter/TIELN.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/fighter/TIELN.cpp.i
+.PHONY : ships/fighter/TIELN.cpp.i
+
+ships/fighter/TIELN.s: ships/fighter/TIELN.cpp.s
+
+.PHONY : ships/fighter/TIELN.s
+
+# target to generate assembly for a file
+ships/fighter/TIELN.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/fighter/TIELN.cpp.s
+.PHONY : ships/fighter/TIELN.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -178,9 +394,33 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... labo2
+	@echo ... Squadron.obj
+	@echo ... Squadron.i
+	@echo ... Squadron.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... ships/Ship.obj
+	@echo ... ships/Ship.i
+	@echo ... ships/Ship.s
+	@echo ... ships/cargo/Cargo.obj
+	@echo ... ships/cargo/Cargo.i
+	@echo ... ships/cargo/Cargo.s
+	@echo ... ships/cargo/Shuttle.obj
+	@echo ... ships/cargo/Shuttle.i
+	@echo ... ships/cargo/Shuttle.s
+	@echo ... ships/cargo/StarDestroyer.obj
+	@echo ... ships/cargo/StarDestroyer.i
+	@echo ... ships/cargo/StarDestroyer.s
+	@echo ... ships/fighter/Fighter.obj
+	@echo ... ships/fighter/Fighter.i
+	@echo ... ships/fighter/Fighter.s
+	@echo ... ships/fighter/TIEIN.obj
+	@echo ... ships/fighter/TIEIN.i
+	@echo ... ships/fighter/TIEIN.s
+	@echo ... ships/fighter/TIELN.obj
+	@echo ... ships/fighter/TIELN.i
+	@echo ... ships/fighter/TIELN.s
 .PHONY : help
 
 
