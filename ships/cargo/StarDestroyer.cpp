@@ -8,3 +8,29 @@
  */
 
 #include "StarDestroyer.h"
+
+unsigned StarDestroyer::count = 0;
+
+StarDestroyer::StarDestroyer(double loadWeight, const std::string& nickname)
+ : super(++count, loadWeight, nickname)
+{}
+
+double StarDestroyer::getWeight() const
+{
+    return 9000000000.0;
+}
+
+unsigned StarDestroyer::getSpeed() const
+{
+    return 40;
+}
+
+std::string StarDestroyer::getModel() const
+{
+    return "Super-class Star Destroyer";
+}
+
+double StarDestroyer::getMaxCargoWeight() const
+{
+    return 250000.0;
+}

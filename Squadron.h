@@ -17,9 +17,16 @@
 #ifndef LABO2_SQUADRON_H
 #define LABO2_SQUADRON_H
 
+#include <cstdlib>
+#include <vector>
+#include "ships/Ship.h"
 
 class Squadron
 {
+
+private:
+    std::vector<const Ship*> squad;
+    Ship* leader;
 
 };
 

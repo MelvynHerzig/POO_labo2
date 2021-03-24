@@ -7,3 +7,24 @@
  -----------------------------------------------------------------------------------
  */
 #include "TIELN.h"
+
+unsigned TIELN::count = 0;
+
+TIELN::TIELN(const std::string& nickname)
+        : super(++count, nickname)
+{}
+
+double TIELN::getWeight() const
+{
+    return 6;
+}
+
+unsigned TIELN::getSpeed() const
+{
+    return 100;
+}
+
+std::string TIELN::getModel() const
+{
+    return "TIE/LN";
+}

@@ -16,8 +16,23 @@
 #define LABO2_CARGO_H
 
 
-class Cargo
+#include <string>
+#include "../Ship.h"
+
+class Cargo : public Ship
 {
+     typedef Ship super;
+
+private:
+    double loadWeight;
+
+public:
+    Cargo(unsigned count, double loadWeight, const std::string& nickname = "");
+
+    virtual std::ostream& toStream(std::ostream& os) const;
+
+    virtual double getMaxCargoWeight() const = 0;
+
 
 };
 

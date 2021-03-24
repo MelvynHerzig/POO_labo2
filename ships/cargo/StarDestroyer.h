@@ -17,9 +17,25 @@
 #define LABO2_STARDESTROYER_H
 
 
-class StarDestroyer
-{
+#include "Cargo.h"
 
+class StarDestroyer : public Cargo
+{
+    typedef Cargo super;
+
+private:
+    static unsigned count;
+
+public:
+    StarDestroyer(double loadWeight = 0, const std::string& nickname = "");
+
+    virtual double getWeight() const;
+
+    virtual unsigned getSpeed() const;
+
+    virtual std::string getModel() const;
+
+    virtual double getMaxCargoWeight() const;
 };
 
 

@@ -16,7 +16,9 @@
 #define LABO2_FIGHTER_H
 
 
-class Fighter
+#include "../Ship.h"
+
+class Fighter : public Ship
 {
 
 };

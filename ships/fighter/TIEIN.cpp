@@ -8,3 +8,24 @@
  */
 
 #include "TIEIN.h"
+
+unsigned TIEIN::count = 0;
+
+TIEIN::TIEIN(const std::string& nickname)
+        : super(++count, nickname)
+{}
+
+double TIEIN::getWeight() const
+{
+    return 5.0;
+}
+
+unsigned TIEIN::getSpeed() const
+{
+    return 110;
+}
+
+std::string TIEIN::getModel() const
+{
+    return "TIE/IN";
+}

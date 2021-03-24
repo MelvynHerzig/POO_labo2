@@ -16,9 +16,23 @@
 #define LABO2_TIELN_H
 
 
-class TIELN
-{
+#include "../Ship.h"
 
+class TIELN : public Ship
+{
+    typedef Ship super;
+
+private:
+    static unsigned count;
+
+public:
+    TIELN(const std::string& nickname = "");
+
+    virtual double getWeight() const;
+
+    virtual unsigned getSpeed() const;
+
+    virtual std::string getModel() const;
 };
 
 

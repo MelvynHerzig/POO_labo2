@@ -16,9 +16,23 @@
 #define LABO2_TIEIN_H
 
 
-class TIEIN
-{
+#include "../Ship.h"
 
+class TIEIN : public Ship
+{
+    typedef Ship super;
+
+private:
+    static unsigned count;
+
+public:
+    TIEIN(const std::string& nickname = "");
+
+    virtual double getWeight() const;
+
+    virtual unsigned getSpeed() const;
+
+    virtual std::string getModel() const;
 };
 
 

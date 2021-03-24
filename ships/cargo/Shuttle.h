@@ -16,10 +16,25 @@
 #ifndef LABO2_SHUTTLE_H
 #define LABO2_SHUTTLE_H
 
+#include "Cargo.h"
 
-class Shuttle
+class Shuttle : public Cargo
 {
+    typedef Cargo super;
 
+private:
+    static unsigned count;
+
+public:
+    Shuttle(double loadWeight = 0, const std::string& nickname = "");
+
+    virtual double getWeight() const;
+
+    virtual unsigned getSpeed() const;
+
+    virtual std::string getModel() const;
+
+    virtual double getMaxCargoWeight() const;
 };
 
 
