@@ -15,7 +15,7 @@ StarDestroyer::StarDestroyer(double loadWeight, const std::string& nickname)
  : super(++count, loadWeight, nickname)
 {}
 
-double StarDestroyer::getWeight() const
+double StarDestroyer::getEmptyWeight() const
 {
     return 9000000000.0;
 }

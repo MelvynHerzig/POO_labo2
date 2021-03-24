@@ -33,6 +33,12 @@ public:
 
     virtual double getMaxCargoWeight() const = 0;
 
+    // Throws invalid_argument
+    void setLoadWeight(double loadWeight);
+
+    virtual double getWeight() const;
+
+    virtual double getEmptyWeight() const = 0;
 
 };
 

@@ -13,8 +13,8 @@
 
 #include <iostream>
 #include "ships/cargo/Shuttle.h"
-#include "Squadron.h"
 #include "ships/fighter/TIELN.h"
+#include "squadron/Squadron.h"
 
 using namespace std;
 

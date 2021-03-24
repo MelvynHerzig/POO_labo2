@@ -53,19 +53,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Dudude\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\203.7148.70\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = "E:\Program Files\JetBrains\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Users\Dudude\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\203.7148.70\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = "E:\Program Files\JetBrains\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2"
+CMAKE_SOURCE_DIR = "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/labo2.dir/depend.make
@@ -78,16 +78,16 @@ include CMakeFiles/labo2.dir/flags.make
 
 CMakeFiles/labo2.dir/main.cpp.obj: CMakeFiles/labo2.dir/flags.make
 CMakeFiles/labo2.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/labo2.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\labo2.dir\main.cpp.obj -c "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/labo2.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\labo2.dir\main.cpp.obj -c "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\main.cpp"
 
 CMakeFiles/labo2.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/labo2.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2\main.cpp" > CMakeFiles\labo2.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\main.cpp" > CMakeFiles\labo2.dir\main.cpp.i
 
 CMakeFiles/labo2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo2.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2\main.cpp" -o CMakeFiles\labo2.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\main.cpp" -o CMakeFiles\labo2.dir\main.cpp.s
 
 CMakeFiles/labo2.dir/ships/Ship.cpp.obj: CMakeFiles/labo2.dir/flags.make
 CMakeFiles/labo2.dir/ships/Ship.cpp.obj: ../ships/Ship.cpp
@@ -102,18 +102,18 @@ CMakeFiles/labo2.dir/ships/Ship.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo2.dir/ships/Ship.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\ships\Ship.cpp" -o CMakeFiles\labo2.dir\ships\Ship.cpp.s
 
-CMakeFiles/labo2.dir/Squadron.cpp.obj: CMakeFiles/labo2.dir/flags.make
-CMakeFiles/labo2.dir/Squadron.cpp.obj: ../Squadron.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/labo2.dir/Squadron.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\labo2.dir\Squadron.cpp.obj -c "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\Squadron.cpp"
+CMakeFiles/labo2.dir/squadron/Squadron.cpp.obj: CMakeFiles/labo2.dir/flags.make
+CMakeFiles/labo2.dir/squadron/Squadron.cpp.obj: ../squadron/Squadron.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/labo2.dir/squadron/Squadron.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\labo2.dir\squadron\Squadron.cpp.obj -c "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\squadron\Squadron.cpp"
 
-CMakeFiles/labo2.dir/Squadron.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/labo2.dir/Squadron.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\Squadron.cpp" > CMakeFiles\labo2.dir\Squadron.cpp.i
+CMakeFiles/labo2.dir/squadron/Squadron.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/labo2.dir/squadron/Squadron.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\squadron\Squadron.cpp" > CMakeFiles\labo2.dir\squadron\Squadron.cpp.i
 
-CMakeFiles/labo2.dir/Squadron.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo2.dir/Squadron.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\Squadron.cpp" -o CMakeFiles\labo2.dir\Squadron.cpp.s
+CMakeFiles/labo2.dir/squadron/Squadron.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo2.dir/squadron/Squadron.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\squadron\Squadron.cpp" -o CMakeFiles\labo2.dir\squadron\Squadron.cpp.s
 
 CMakeFiles/labo2.dir/ships/cargo/Cargo.cpp.obj: CMakeFiles/labo2.dir/flags.make
 CMakeFiles/labo2.dir/ships/cargo/Cargo.cpp.obj: ../ships/cargo/Cargo.cpp
@@ -128,22 +128,9 @@ CMakeFiles/labo2.dir/ships/cargo/Cargo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo2.dir/ships/cargo/Cargo.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\ships\cargo\Cargo.cpp" -o CMakeFiles\labo2.dir\ships\cargo\Cargo.cpp.s
 
-CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.obj: CMakeFiles/labo2.dir/flags.make
-CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.obj: ../ships/fighter/Fighter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\labo2.dir\ships\fighter\Fighter.cpp.obj -c "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\ships\fighter\Fighter.cpp"
-
-CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\ships\fighter\Fighter.cpp" > CMakeFiles\labo2.dir\ships\fighter\Fighter.cpp.i
-
-CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\ships\fighter\Fighter.cpp" -o CMakeFiles\labo2.dir\ships\fighter\Fighter.cpp.s
-
 CMakeFiles/labo2.dir/ships/cargo/Shuttle.cpp.obj: CMakeFiles/labo2.dir/flags.make
 CMakeFiles/labo2.dir/ships/cargo/Shuttle.cpp.obj: ../ships/cargo/Shuttle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/labo2.dir/ships/cargo/Shuttle.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/labo2.dir/ships/cargo/Shuttle.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\labo2.dir\ships\cargo\Shuttle.cpp.obj -c "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\ships\cargo\Shuttle.cpp"
 
 CMakeFiles/labo2.dir/ships/cargo/Shuttle.cpp.i: cmake_force
@@ -156,7 +143,7 @@ CMakeFiles/labo2.dir/ships/cargo/Shuttle.cpp.s: cmake_force
 
 CMakeFiles/labo2.dir/ships/cargo/StarDestroyer.cpp.obj: CMakeFiles/labo2.dir/flags.make
 CMakeFiles/labo2.dir/ships/cargo/StarDestroyer.cpp.obj: ../ships/cargo/StarDestroyer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/labo2.dir/ships/cargo/StarDestroyer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/labo2.dir/ships/cargo/StarDestroyer.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\labo2.dir\ships\cargo\StarDestroyer.cpp.obj -c "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\ships\cargo\StarDestroyer.cpp"
 
 CMakeFiles/labo2.dir/ships/cargo/StarDestroyer.cpp.i: cmake_force
@@ -169,7 +156,7 @@ CMakeFiles/labo2.dir/ships/cargo/StarDestroyer.cpp.s: cmake_force
 
 CMakeFiles/labo2.dir/ships/fighter/TIELN.cpp.obj: CMakeFiles/labo2.dir/flags.make
 CMakeFiles/labo2.dir/ships/fighter/TIELN.cpp.obj: ../ships/fighter/TIELN.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/labo2.dir/ships/fighter/TIELN.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/labo2.dir/ships/fighter/TIELN.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\labo2.dir\ships\fighter\TIELN.cpp.obj -c "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\ships\fighter\TIELN.cpp"
 
 CMakeFiles/labo2.dir/ships/fighter/TIELN.cpp.i: cmake_force
@@ -182,7 +169,7 @@ CMakeFiles/labo2.dir/ships/fighter/TIELN.cpp.s: cmake_force
 
 CMakeFiles/labo2.dir/ships/fighter/TIEIN.cpp.obj: CMakeFiles/labo2.dir/flags.make
 CMakeFiles/labo2.dir/ships/fighter/TIEIN.cpp.obj: ../ships/fighter/TIEIN.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/labo2.dir/ships/fighter/TIEIN.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/labo2.dir/ships/fighter/TIEIN.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\labo2.dir\ships\fighter\TIEIN.cpp.obj -c "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\ships\fighter\TIEIN.cpp"
 
 CMakeFiles/labo2.dir/ships/fighter/TIEIN.cpp.i: cmake_force
@@ -193,39 +180,63 @@ CMakeFiles/labo2.dir/ships/fighter/TIEIN.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo2.dir/ships/fighter/TIEIN.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\ships\fighter\TIEIN.cpp" -o CMakeFiles\labo2.dir\ships\fighter\TIEIN.cpp.s
 
+CMakeFiles/labo2.dir/squadron/operation/SquadronAdd.cpp.obj: CMakeFiles/labo2.dir/flags.make
+CMakeFiles/labo2.dir/squadron/operation/SquadronAdd.cpp.obj: ../squadron/operation/SquadronAdd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/labo2.dir/squadron/operation/SquadronAdd.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\labo2.dir\squadron\operation\SquadronAdd.cpp.obj -c "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\squadron\operation\SquadronAdd.cpp"
+
+CMakeFiles/labo2.dir/squadron/operation/SquadronAdd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/labo2.dir/squadron/operation/SquadronAdd.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\squadron\operation\SquadronAdd.cpp" > CMakeFiles\labo2.dir\squadron\operation\SquadronAdd.cpp.i
+
+CMakeFiles/labo2.dir/squadron/operation/SquadronAdd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo2.dir/squadron/operation/SquadronAdd.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\squadron\operation\SquadronAdd.cpp" -o CMakeFiles\labo2.dir\squadron\operation\SquadronAdd.cpp.s
+
+CMakeFiles/labo2.dir/squadron/operation/SquadronRemove.cpp.obj: CMakeFiles/labo2.dir/flags.make
+CMakeFiles/labo2.dir/squadron/operation/SquadronRemove.cpp.obj: ../squadron/operation/SquadronRemove.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/labo2.dir/squadron/operation/SquadronRemove.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\labo2.dir\squadron\operation\SquadronRemove.cpp.obj -c "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\squadron\operation\SquadronRemove.cpp"
+
+CMakeFiles/labo2.dir/squadron/operation/SquadronRemove.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/labo2.dir/squadron/operation/SquadronRemove.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\squadron\operation\SquadronRemove.cpp" > CMakeFiles\labo2.dir\squadron\operation\SquadronRemove.cpp.i
+
+CMakeFiles/labo2.dir/squadron/operation/SquadronRemove.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/labo2.dir/squadron/operation/SquadronRemove.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\squadron\operation\SquadronRemove.cpp" -o CMakeFiles\labo2.dir\squadron\operation\SquadronRemove.cpp.s
+
 # Object files for target labo2
 labo2_OBJECTS = \
 "CMakeFiles/labo2.dir/main.cpp.obj" \
 "CMakeFiles/labo2.dir/ships/Ship.cpp.obj" \
-"CMakeFiles/labo2.dir/Squadron.cpp.obj" \
+"CMakeFiles/labo2.dir/squadron/Squadron.cpp.obj" \
 "CMakeFiles/labo2.dir/ships/cargo/Cargo.cpp.obj" \
-"CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.obj" \
 "CMakeFiles/labo2.dir/ships/cargo/Shuttle.cpp.obj" \
 "CMakeFiles/labo2.dir/ships/cargo/StarDestroyer.cpp.obj" \
 "CMakeFiles/labo2.dir/ships/fighter/TIELN.cpp.obj" \
-"CMakeFiles/labo2.dir/ships/fighter/TIEIN.cpp.obj"
+"CMakeFiles/labo2.dir/ships/fighter/TIEIN.cpp.obj" \
+"CMakeFiles/labo2.dir/squadron/operation/SquadronAdd.cpp.obj" \
+"CMakeFiles/labo2.dir/squadron/operation/SquadronRemove.cpp.obj"
 
 # External object files for target labo2
 labo2_EXTERNAL_OBJECTS =
 
 labo2.exe: CMakeFiles/labo2.dir/main.cpp.obj
 labo2.exe: CMakeFiles/labo2.dir/ships/Ship.cpp.obj
-labo2.exe: CMakeFiles/labo2.dir/Squadron.cpp.obj
+labo2.exe: CMakeFiles/labo2.dir/squadron/Squadron.cpp.obj
 labo2.exe: CMakeFiles/labo2.dir/ships/cargo/Cargo.cpp.obj
-labo2.exe: CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.obj
 labo2.exe: CMakeFiles/labo2.dir/ships/cargo/Shuttle.cpp.obj
 labo2.exe: CMakeFiles/labo2.dir/ships/cargo/StarDestroyer.cpp.obj
 labo2.exe: CMakeFiles/labo2.dir/ships/fighter/TIELN.cpp.obj
 labo2.exe: CMakeFiles/labo2.dir/ships/fighter/TIEIN.cpp.obj
+labo2.exe: CMakeFiles/labo2.dir/squadron/operation/SquadronAdd.cpp.obj
+labo2.exe: CMakeFiles/labo2.dir/squadron/operation/SquadronRemove.cpp.obj
 labo2.exe: CMakeFiles/labo2.dir/build.make
 labo2.exe: CMakeFiles/labo2.dir/linklibs.rsp
 labo2.exe: CMakeFiles/labo2.dir/objects1.rsp
 labo2.exe: CMakeFiles/labo2.dir/link.txt
-<<<<<<< Updated upstream
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable labo2.exe"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable labo2.exe"
->>>>>>> Stashed changes
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable labo2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\labo2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -238,6 +249,6 @@ CMakeFiles/labo2.dir/clean:
 .PHONY : CMakeFiles/labo2.dir/clean
 
 CMakeFiles/labo2.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2" "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2" "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2\cmake-build-debug" "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2\cmake-build-debug" "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2\cmake-build-debug\CMakeFiles\labo2.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2" "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2" "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug" "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug" "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles\labo2.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/labo2.dir/depend
 

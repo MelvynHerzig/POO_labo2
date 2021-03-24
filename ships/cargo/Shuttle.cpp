@@ -14,7 +14,7 @@ Shuttle::Shuttle(double loadWeight, const std::string& nickname)
         : super(++count, loadWeight, nickname)
 {}
 
-double Shuttle::getWeight() const
+double Shuttle::getEmptyWeight() const
 {
     return 360.0;
 }

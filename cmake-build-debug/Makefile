@@ -58,19 +58,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\Dudude\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\203.7148.70\bin\cmake\win\bin\cmake.exe
+CMAKE_COMMAND = "E:\Program Files\JetBrains\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = C:\Users\Dudude\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\203.7148.70\bin\cmake\win\bin\cmake.exe -E rm -f
+RM = "E:\Program Files\JetBrains\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2"
+CMAKE_SOURCE_DIR = "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ CMAKE_BINARY_DIR = "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2\c
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	C:\Users\Dudude\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\203.7148.70\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available."
+	"E:\Program Files\JetBrains\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -89,7 +89,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\Dudude\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\203.7148.70\bin\cmake\win\bin\cmake.exe --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"E:\Program Files\JetBrains\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2\cmake-build-debug\CMakeFiles" "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "D:\Google Drive\HEIG-VD\4eme semestre\POO2\Labos\POO_labo2\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\melvy\Desktop\Application\Drive\HEIG_VD\4em semestre\POO2\labo2\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -141,33 +141,6 @@ labo2: cmake_check_build_system
 labo2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/build
 .PHONY : labo2/fast
-
-Squadron.obj: Squadron.cpp.obj
-
-.PHONY : Squadron.obj
-
-# target to build an object file
-Squadron.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/Squadron.cpp.obj
-.PHONY : Squadron.cpp.obj
-
-Squadron.i: Squadron.cpp.i
-
-.PHONY : Squadron.i
-
-# target to preprocess a source file
-Squadron.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/Squadron.cpp.i
-.PHONY : Squadron.cpp.i
-
-Squadron.s: Squadron.cpp.s
-
-.PHONY : Squadron.s
-
-# target to generate assembly for a file
-Squadron.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/Squadron.cpp.s
-.PHONY : Squadron.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -304,33 +277,6 @@ ships/cargo/StarDestroyer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/cargo/StarDestroyer.cpp.s
 .PHONY : ships/cargo/StarDestroyer.cpp.s
 
-ships/fighter/Fighter.obj: ships/fighter/Fighter.cpp.obj
-
-.PHONY : ships/fighter/Fighter.obj
-
-# target to build an object file
-ships/fighter/Fighter.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.obj
-.PHONY : ships/fighter/Fighter.cpp.obj
-
-ships/fighter/Fighter.i: ships/fighter/Fighter.cpp.i
-
-.PHONY : ships/fighter/Fighter.i
-
-# target to preprocess a source file
-ships/fighter/Fighter.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.i
-.PHONY : ships/fighter/Fighter.cpp.i
-
-ships/fighter/Fighter.s: ships/fighter/Fighter.cpp.s
-
-.PHONY : ships/fighter/Fighter.s
-
-# target to generate assembly for a file
-ships/fighter/Fighter.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/fighter/Fighter.cpp.s
-.PHONY : ships/fighter/Fighter.cpp.s
-
 ships/fighter/TIEIN.obj: ships/fighter/TIEIN.cpp.obj
 
 .PHONY : ships/fighter/TIEIN.obj
@@ -385,6 +331,87 @@ ships/fighter/TIELN.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/ships/fighter/TIELN.cpp.s
 .PHONY : ships/fighter/TIELN.cpp.s
 
+squadron/Squadron.obj: squadron/Squadron.cpp.obj
+
+.PHONY : squadron/Squadron.obj
+
+# target to build an object file
+squadron/Squadron.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/squadron/Squadron.cpp.obj
+.PHONY : squadron/Squadron.cpp.obj
+
+squadron/Squadron.i: squadron/Squadron.cpp.i
+
+.PHONY : squadron/Squadron.i
+
+# target to preprocess a source file
+squadron/Squadron.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/squadron/Squadron.cpp.i
+.PHONY : squadron/Squadron.cpp.i
+
+squadron/Squadron.s: squadron/Squadron.cpp.s
+
+.PHONY : squadron/Squadron.s
+
+# target to generate assembly for a file
+squadron/Squadron.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/squadron/Squadron.cpp.s
+.PHONY : squadron/Squadron.cpp.s
+
+squadron/operation/SquadronAdd.obj: squadron/operation/SquadronAdd.cpp.obj
+
+.PHONY : squadron/operation/SquadronAdd.obj
+
+# target to build an object file
+squadron/operation/SquadronAdd.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/squadron/operation/SquadronAdd.cpp.obj
+.PHONY : squadron/operation/SquadronAdd.cpp.obj
+
+squadron/operation/SquadronAdd.i: squadron/operation/SquadronAdd.cpp.i
+
+.PHONY : squadron/operation/SquadronAdd.i
+
+# target to preprocess a source file
+squadron/operation/SquadronAdd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/squadron/operation/SquadronAdd.cpp.i
+.PHONY : squadron/operation/SquadronAdd.cpp.i
+
+squadron/operation/SquadronAdd.s: squadron/operation/SquadronAdd.cpp.s
+
+.PHONY : squadron/operation/SquadronAdd.s
+
+# target to generate assembly for a file
+squadron/operation/SquadronAdd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/squadron/operation/SquadronAdd.cpp.s
+.PHONY : squadron/operation/SquadronAdd.cpp.s
+
+squadron/operation/SquadronRemove.obj: squadron/operation/SquadronRemove.cpp.obj
+
+.PHONY : squadron/operation/SquadronRemove.obj
+
+# target to build an object file
+squadron/operation/SquadronRemove.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/squadron/operation/SquadronRemove.cpp.obj
+.PHONY : squadron/operation/SquadronRemove.cpp.obj
+
+squadron/operation/SquadronRemove.i: squadron/operation/SquadronRemove.cpp.i
+
+.PHONY : squadron/operation/SquadronRemove.i
+
+# target to preprocess a source file
+squadron/operation/SquadronRemove.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/squadron/operation/SquadronRemove.cpp.i
+.PHONY : squadron/operation/SquadronRemove.cpp.i
+
+squadron/operation/SquadronRemove.s: squadron/operation/SquadronRemove.cpp.s
+
+.PHONY : squadron/operation/SquadronRemove.s
+
+# target to generate assembly for a file
+squadron/operation/SquadronRemove.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\labo2.dir\build.make CMakeFiles/labo2.dir/squadron/operation/SquadronRemove.cpp.s
+.PHONY : squadron/operation/SquadronRemove.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -394,9 +421,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... labo2
-	@echo ... Squadron.obj
-	@echo ... Squadron.i
-	@echo ... Squadron.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -412,15 +436,21 @@ help:
 	@echo ... ships/cargo/StarDestroyer.obj
 	@echo ... ships/cargo/StarDestroyer.i
 	@echo ... ships/cargo/StarDestroyer.s
-	@echo ... ships/fighter/Fighter.obj
-	@echo ... ships/fighter/Fighter.i
-	@echo ... ships/fighter/Fighter.s
 	@echo ... ships/fighter/TIEIN.obj
 	@echo ... ships/fighter/TIEIN.i
 	@echo ... ships/fighter/TIEIN.s
 	@echo ... ships/fighter/TIELN.obj
 	@echo ... ships/fighter/TIELN.i
 	@echo ... ships/fighter/TIELN.s
+	@echo ... squadron/Squadron.obj
+	@echo ... squadron/Squadron.i
+	@echo ... squadron/Squadron.s
+	@echo ... squadron/operation/SquadronAdd.obj
+	@echo ... squadron/operation/SquadronAdd.i
+	@echo ... squadron/operation/SquadronAdd.s
+	@echo ... squadron/operation/SquadronRemove.obj
+	@echo ... squadron/operation/SquadronRemove.i
+	@echo ... squadron/operation/SquadronRemove.s
 .PHONY : help
 
 

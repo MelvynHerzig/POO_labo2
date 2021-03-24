@@ -28,13 +28,13 @@ private:
 public:
     Shuttle(double loadWeight = 0, const std::string& nickname = "");
 
-    virtual double getWeight() const;
-
     virtual unsigned getSpeed() const;
 
     virtual std::string getModel() const;
 
     virtual double getMaxCargoWeight() const;
+
+   virtual double getEmptyWeight() const;
 };
 
 

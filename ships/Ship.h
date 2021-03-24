@@ -19,7 +19,7 @@
 
 class Ship;
 
-std::ostream& operator << (std::ostream& os, const Ship& ship);
+std::ostream& operator<< (std::ostream& os, const Ship& ship);
 
 class Ship
 {
@@ -30,6 +30,8 @@ private:
 
 public:
     Ship(unsigned id, const std::string& nickname);
+
+    void setNickname(const std::string& nickname);
 
     double consumption(double distance) const;
 
@@ -44,6 +46,7 @@ public:
     virtual std::ostream& toStream(std::ostream& os) const;
 
 };
+
 
 
 #endif //LABO2_SHIP_H
