@@ -56,6 +56,9 @@ private:
    const Ship*  leader;
    std::string  name;
 
+   static const SquadronOperation& applyAdd;
+   static const SquadronOperation& applyRemove;
+
 private:
    Squadron(const std::string& name, size_t capacity, const Ship* leader);
 

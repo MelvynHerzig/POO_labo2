@@ -6,11 +6,35 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/main.cpp
+iostream
+-
+ships/cargo/Shuttle.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/Shuttle.h
+ships/fighter/TIELN.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/fighter/TIELN.h
+squadron/Squadron.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/Squadron.h
+
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/Ship.h
 cstdlib
 -
 string
 -
+
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/Cargo.h
+string
+-
+../Ship.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/Ship.h
+
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/Shuttle.h
+Cargo.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/Cargo.h
+
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/fighter/TIELN.h
+../Ship.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/Ship.h
 
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/Squadron.cpp
 limits
@@ -42,6 +66,14 @@ ostream
 ../ships/Ship.h
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/Ship.h
 
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/operation/SquadronAdd.cpp
+limits
+-
+stdexcept
+-
+SquadronAdd.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/operation/SquadronAdd.h
+
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/operation/SquadronAdd.h
 SquadronOperation.h
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/operation/SquadronOperation.h
@@ -49,6 +81,14 @@ C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadro
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/operation/SquadronOperation.h
 ../Squadron.h
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/Squadron.h
+
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/operation/SquadronRemove.cpp
+limits
+-
+stdexcept
+-
+SquadronRemove.h
+C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/operation/SquadronRemove.h
 
 C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/operation/SquadronRemove.h
 SquadronOperation.h

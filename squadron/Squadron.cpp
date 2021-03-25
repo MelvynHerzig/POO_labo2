@@ -20,6 +20,9 @@ size_t Squadron::DEFAULT_SQUAD_SIZE = 10;
 
 using namespace std;
 
+const SquadronOperation& Squadron::applyAdd    = SquadronAdd();
+const SquadronOperation& Squadron::applyRemove = SquadronRemove();
+
 Squadron operator+ (const Squadron &squadron, const Ship* ship)
 {
    return squadron.add(ship);
@@ -165,26 +168,22 @@ Squadron& Squadron::operator-= (const Ship *ship)
 Squadron Squadron::add (const Ship *ship) const
 {
 
-   SquadronAdd op =  SquadronAdd();
-   return opCopy(ship, op);
+   return opCopy(ship, applyAdd);
 }
 
 Squadron Squadron::remove (const Ship *ship) const
 {
-   SquadronRemove op =  SquadronRemove();
-   return opCopy(ship, op);
+   return opCopy(ship, applyRemove);
 }
 
 Squadron& Squadron::addSelf (const Ship *ship)
 {
-   SquadronAdd op =  SquadronAdd();
-   return opSelf(ship, op);
+   return opSelf(ship, applyAdd);
 }
 
 Squadron& Squadron::removeSelf (const Ship *ship)
 {
-   SquadronRemove op =  SquadronRemove();
-   return opSelf(ship, op);
+   return opSelf(ship, applyRemove);
 }
 
 void Squadron::setName (const string &name)
