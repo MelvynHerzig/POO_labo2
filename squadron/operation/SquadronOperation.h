@@ -23,7 +23,7 @@ class SquadronOperation
 {
 public:
    // Throws invalid_argument
-   virtual void squadOp(Squadron& squadron, const Ship* ship) const = 0;
+   virtual void operator()(Squadron& squadron, const Ship* ship) const = 0;
 };
 
 

@@ -103,8 +103,8 @@ private:
    // Throws invalid_argument
    size_t contains(const Ship* ship) const;
 
-   Squadron& opSelf(const Ship* ship,const SquadronOperation* op);
-   Squadron  opCopy(const Ship* ship,const SquadronOperation* op) const;
+   Squadron& opSelf(const Ship* ship,const SquadronOperation& op);
+   Squadron  opCopy(const Ship* ship,const SquadronOperation& op) const;
 
    void freeSquad();
 

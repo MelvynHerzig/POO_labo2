@@ -20,7 +20,7 @@
 class SquadronAdd : public SquadronOperation
 {
 public:
-   void squadOp(Squadron& squadron, const Ship* ship) const;
+   virtual void operator()(Squadron& squadron, const Ship* ship) const;
 };
 
 

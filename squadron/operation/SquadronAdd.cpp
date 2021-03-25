@@ -8,7 +8,7 @@
 
 using namespace std;
 
-void SquadronAdd::squadOp (Squadron &squadron, const Ship* ship) const
+void SquadronAdd::operator() (Squadron &squadron, const Ship* ship) const
 {
    if(ship == nullptr) throw invalid_argument("Cannot add nullptr ship to squad.");
 
