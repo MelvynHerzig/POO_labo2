@@ -6,6 +6,8 @@ CMakeFiles/labo2.dir/main.cpp.obj
  C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/Ship.h
  C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/Cargo.h
  C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/Shuttle.h
+ C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/StarDestroyer.h
+ C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/fighter/TIEIN.h
  C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/fighter/TIELN.h
  C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/Squadron.h
 CMakeFiles/labo2.dir/ships/Ship.cpp.obj

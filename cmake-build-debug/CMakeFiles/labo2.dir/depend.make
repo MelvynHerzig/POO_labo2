@@ -5,6 +5,8 @@ CMakeFiles/labo2.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/labo2.dir/main.cpp.obj: ../ships/Ship.h
 CMakeFiles/labo2.dir/main.cpp.obj: ../ships/cargo/Cargo.h
 CMakeFiles/labo2.dir/main.cpp.obj: ../ships/cargo/Shuttle.h
+CMakeFiles/labo2.dir/main.cpp.obj: ../ships/cargo/StarDestroyer.h
+CMakeFiles/labo2.dir/main.cpp.obj: ../ships/fighter/TIEIN.h
 CMakeFiles/labo2.dir/main.cpp.obj: ../ships/fighter/TIELN.h
 CMakeFiles/labo2.dir/main.cpp.obj: ../squadron/Squadron.h
 

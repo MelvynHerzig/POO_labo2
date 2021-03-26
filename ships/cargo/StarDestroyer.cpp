@@ -10,27 +10,31 @@
 #include "StarDestroyer.h"
 
 unsigned StarDestroyer::count = 0;
+const double StarDestroyer::WEIGHT = 9000000000.0;
+const double StarDestroyer::MAX_LOAD_WEIGHT = 250000.0;
+const unsigned StarDestroyer::SPEED = 40;
+const std::string StarDestroyer::MODEL = "Super-class Star Destroyer";
 
 StarDestroyer::StarDestroyer(double loadWeight, const std::string& nickname)
  : super(++count, loadWeight, nickname)
 {}
 
-double StarDestroyer::getEmptyWeight() const
-{
-    return 9000000000.0;
-}
-
 unsigned StarDestroyer::getSpeed() const
 {
-    return 40;
+    return SPEED;
 }
 
 std::string StarDestroyer::getModel() const
 {
-    return "Super-class Star Destroyer";
+    return MODEL;
 }
 
-double StarDestroyer::getMaxCargoWeight() const
+double StarDestroyer::getMaxLoadWeight() const
 {
-    return 250000.0;
+    return MAX_LOAD_WEIGHT;
+}
+
+double StarDestroyer::getEmptyWeight() const
+{
+   return WEIGHT;
 }

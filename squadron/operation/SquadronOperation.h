@@ -2,7 +2,7 @@
  -----------------------------------------------------------------------------------
  Laboratoire : 02
  Fichier     : SquadronOperation.h
- Auteur(s)   : Forestier Quentin & Melvyn Herzig
+ Auteur(s)   : Forestier Quentin & Herzig Melvyn
  Date        : 24/03/2021
 
  But         : Classe abstraite définissant la classe à implémenter
@@ -17,14 +17,26 @@
 
 #include "../Squadron.h" // Squadron
 
+// Pré-déclaration pour utiliser les escadrilles.
 class Squadron;
 
+/**
+ * @brief Classe interface définisant les opérations sur les escadrilles
+ *        servira pour l'ajout et le retrait de vaisseaux.
+ * @authors Forestier Quentin et Herzig Melvyn
+ * @version 1.0.0
+ */
 class SquadronOperation
 {
-public:
-   // Throws invalid_argument
+   friend Squadron;
+private:
+   /**
+    * @brief Applique une transformation sur l'escadrille.
+    * @param squadron Escadrille concernée.
+    * @param ship Vaisseau impliqué.
+    * @throws invalid_argument (par SquadAdd et SquadRemove)
+    */
    virtual void operator()(Squadron& squadron, const Ship* ship) const = 0;
 };
-
 
 #endif //LABO2_SQUADRONOPERATION_H

@@ -2,7 +2,7 @@
  -----------------------------------------------------------------------------------
  Laboratoire : 02
  Fichier     : TIEIN.cpp
- Auteur(s)   : Forestier Quentin & Melvyn Herzig
+ Auteur(s)   : Forestier Quentin & Herzig Melvyn
  Date        : 17/03/2021
  -----------------------------------------------------------------------------------
  */
@@ -10,22 +10,25 @@
 #include "TIEIN.h"
 
 unsigned TIEIN::count = 0;
+const double TIEIN::WEIGHT = 5.0;
+const unsigned TIEIN::SPEED =  110;
+const std::string TIEIN::MODEL = "TIE/IN";
 
-TIEIN::TIEIN(const std::string& nickname)
+TIEIN::TIEIN (const std::string &nickname)
         : super(++count, nickname)
 {}
 
-double TIEIN::getWeight() const
+double TIEIN::getWeight () const
 {
-    return 5.0;
+   return WEIGHT;
 }
 
-unsigned TIEIN::getSpeed() const
+unsigned TIEIN::getSpeed () const
 {
-    return 110;
+   return SPEED;
 }
 
-std::string TIEIN::getModel() const
+std::string TIEIN::getModel () const
 {
-    return "TIE/IN";
+   return MODEL;
 }

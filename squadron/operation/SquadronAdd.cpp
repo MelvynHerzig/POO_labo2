@@ -1,6 +1,11 @@
-//
-// Created by melvy on 24/03/2021.
-//
+/*
+ -----------------------------------------------------------------------------------
+ Laboratoire : 02
+ Fichier     : SquadronAdd.h
+ Auteur(s)   : Forestier Quentin & Herzig Melvyn
+ Date        : 24/03/2021
+ -----------------------------------------------------------------------------------
+ */
 
 #include <limits>     // numeric_limits<std::size_t>
 #include <stdexcept>  // invalid_argument

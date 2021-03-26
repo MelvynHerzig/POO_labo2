@@ -2,34 +2,38 @@
  -----------------------------------------------------------------------------------
  Laboratoire : 02
  Fichier     : Shuttle.cpp
- Auteur(s)   : Forestier Quentin & Melvyn Herzig
+ Auteur(s)   : Forestier Quentin & Herzig Melvyn
  Date        : 17/03/2021
  -----------------------------------------------------------------------------------
  */
 #include "Shuttle.h"
 
 unsigned Shuttle::count = 0;
+const double Shuttle::WEIGHT = 360;
+const double Shuttle::MAX_LOAD_WEIGHT = 80.0;
+const unsigned Shuttle::SPEED = 54;
+const std::string Shuttle::MODEL = "Lambda-class shuttle";
 
 Shuttle::Shuttle(double loadWeight, const std::string& nickname)
         : super(++count, loadWeight, nickname)
 {}
 
-double Shuttle::getEmptyWeight() const
-{
-    return 360.0;
-}
-
 unsigned Shuttle::getSpeed() const
 {
-    return 54;
+    return SPEED;
 }
 
 std::string Shuttle::getModel() const
 {
-    return "Lambda-class shuttle";
+    return MODEL;
 }
 
-double Shuttle::getMaxCargoWeight() const
+double Shuttle::getMaxLoadWeight() const
 {
-    return 80.0;
+    return MAX_LOAD_WEIGHT;
+}
+
+double Shuttle::getEmptyWeight() const
+{
+   return WEIGHT;
 }

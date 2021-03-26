@@ -2,29 +2,33 @@
  -----------------------------------------------------------------------------------
  Laboratoire : 02
  Fichier     : TIELN.cpp
- Auteur(s)   : Forestier Quentin & Melvyn Herzig
+ Auteur(s)   : Forestier Quentin & Herzig Melvyn
  Date        : 17/03/2021
  -----------------------------------------------------------------------------------
  */
+
 #include "TIELN.h"
 
 unsigned TIELN::count = 0;
+const double TIELN::WEIGHT = 6;
+const unsigned TIELN::SPEED = 100;
+const std::string TIELN::MODEL = "TIE/LN";
 
-TIELN::TIELN(const std::string& nickname)
+TIELN::TIELN (const std::string &nickname)
         : super(++count, nickname)
 {}
 
-double TIELN::getWeight() const
+double TIELN::getWeight () const
 {
-    return 6;
+   return WEIGHT;
 }
 
-unsigned TIELN::getSpeed() const
+unsigned TIELN::getSpeed () const
 {
-    return 100;
+   return SPEED;
 }
 
-std::string TIELN::getModel() const
+std::string TIELN::getModel () const
 {
-    return "TIE/LN";
+   return MODEL;
 }

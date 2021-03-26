@@ -2,27 +2,33 @@
  -----------------------------------------------------------------------------------
  Laboratoire : 02
  Fichier     : Squadron.cpp
- Auteur(s)   : Forestier Quentin & Melvyn Herzig
+ Auteur(s)   : Forestier Quentin & Herzig Melvyn
  Date        : 17/03/2021
  -----------------------------------------------------------------------------------
  */
 
-#include <limits>
-#include <stdexcept>
-#include <sstream>
-#include <iomanip>
-#include "operation/SquadronOperation.h"
-#include "operation/SquadronRemove.h"
-#include "operation/SquadronAdd.h"
+#include <limits>                        // numeric_limit<size_t>::max()
+#include <stdexcept>                     // std::invalid_argument
+#include <sstream>                       // std::stringstream
+#include <iomanip>                       // std::fixed, std::precision
+#include "operation/SquadronOperation.h" // SquadronOperation
+#include "operation/SquadronRemove.h"    // SquadronRemove
+#include "operation/SquadronAdd.h"       // SquadronAdd
 #include "Squadron.h"
 
-size_t Squadron::DEFAULT_SQUAD_SIZE = 10;
+
 
 using namespace std;
 
-const SquadronOperation& Squadron::applyAdd    = SquadronAdd();
-const SquadronOperation& Squadron::applyRemove = SquadronRemove();
 
+// ----------------- Constantes statiques -------------------
+const SquadronOperation& Squadron::APPLY_ADD    = SquadronAdd();
+const SquadronOperation& Squadron::APPLY_REMOVE = SquadronRemove();
+
+const size_t Squadron::DEFAULT_SQUAD_CAPACITY = 10;
+
+
+// ----------------- Opérateurs amis -------------------
 Squadron operator+ (const Squadron &squadron, const Ship* ship)
 {
    return squadron.add(ship);
@@ -32,7 +38,6 @@ Squadron operator+ (const Ship* ship, const Squadron &squadron)
    return operator+(squadron, ship);
 }
 
-// operateur -
 Squadron operator- (const Squadron &squadron, const Ship* ship)
 {
    return squadron.remove(ship);
@@ -63,14 +68,117 @@ std::ostream& operator<<(std::ostream& os, const Squadron& squadron)
       }
    }
 
-   return os << fixed << setprecision(2)
-             << "Squadron : " << squadron.name << endl
-             << "\tmax speed : " << maxSpeed << " MGLT" << endl
-             << "\ttotal weight : " << totalWeight << " tons" << endl << endl
-             << "-- Leader: " << endl
-             << *squadron.leader << endl << endl << ss.str();
+   maxSpeed = (maxSpeed == numeric_limits<size_t>::max()) ? 0 : maxSpeed;
 
+   // Informations générales
+   os << fixed << setprecision(2)
+      << "Squadron : " << squadron.name << endl
+      << "\tmax speed : " << maxSpeed << " MGLT" << endl
+      << "\ttotal weight : " << totalWeight << " tons" << endl << endl;
+
+   // Leader
+   os << "-- Leader: " << endl;
+   if(squadron.leader != nullptr)
+   {
+         os << *squadron.leader << endl << endl;
+   }
+
+   // Vaisseaux membres
+   os << ss.str();
+
+   return os;
 }
+
+// -----------------Constructeurs / Destructeur -------------------
+Squadron::Squadron (const string& name)
+{
+   init(name , DEFAULT_SQUAD_CAPACITY, nullptr);
+}
+
+Squadron::Squadron (const Squadron& otherSquadron)
+{
+   init(otherSquadron.name, otherSquadron.squadCapacity, otherSquadron.leader);
+   copySquad(otherSquadron.squad, otherSquadron.squadSize);
+}
+
+Squadron::~Squadron()
+{
+   freeSquad();
+}
+
+// ----------------- Opérateurs -------------------
+Squadron& Squadron::operator+= (const Ship *ship)
+{
+   return addSelf(ship);
+}
+
+Squadron& Squadron::operator-= (const Ship *ship)
+{
+   return removeSelf(ship);;
+}
+
+Squadron& Squadron::operator= (const Squadron &otherSquadron)
+{
+   if(this == &otherSquadron) return *this;
+
+   freeSquad();
+   init(otherSquadron.name, otherSquadron.squadCapacity, otherSquadron.leader);
+   copySquad(otherSquadron.squad, otherSquadron.squadSize);
+   return *this;
+}
+
+Squadron Squadron::add (const Ship *ship) const
+{
+   return opCopy(ship, APPLY_ADD);
+}
+
+Squadron Squadron::remove (const Ship *ship) const
+{
+   return opCopy(ship, APPLY_REMOVE);
+}
+
+Squadron& Squadron::addSelf (const Ship *ship)
+{
+   return opSelf(ship, APPLY_ADD);
+}
+
+Squadron& Squadron::removeSelf (const Ship *ship)
+{
+   return opSelf(ship, APPLY_REMOVE);
+}
+
+// ----------------- Mutateur -------------------
+
+void Squadron::setName (const string &name)
+{
+   this->name = name;
+}
+
+void Squadron::setLeader (const Ship *leader)
+{
+   if(leader == nullptr || contains(leader) != numeric_limits<size_t>::max())
+   {
+      this->leader = leader;
+   }
+}
+
+void Squadron::unsetLeader ()
+{
+   leader = nullptr;
+}
+
+double Squadron::consumption (double distance) const
+{
+   double totalConsumption = 0.0;
+
+   for(size_t i = 0; i < squadSize; ++i)
+   {
+      totalConsumption += squad[i]->consumption(distance);
+   }
+   return totalConsumption;
+}
+
+// ----------------- Private -------------------
 
 void Squadron::init (const string &name, size_t squadCapacity, const Ship *leader)
 {
@@ -80,19 +188,6 @@ void Squadron::init (const string &name, size_t squadCapacity, const Ship *leade
 
    squad = new const Ship*[squadCapacity];
    squadSize = 0;
-}
-
-Squadron::Squadron (const string &name, size_t capacity, const Ship *leader)
-{
-   init(name, capacity, leader);
-}
-
-Squadron::Squadron (const string& name): Squadron(name , DEFAULT_SQUAD_SIZE, nullptr)
-{}
-
-Squadron::Squadron (const Squadron& otherSquadron) : Squadron(otherSquadron.name, otherSquadron.squadCapacity, otherSquadron.leader)
-{
-   copySquad(otherSquadron.squad, otherSquadron.squadSize);
 }
 
 void Squadron::copySquad (const Ship **otherSquad, size_t otherSquadLength)
@@ -107,17 +202,11 @@ void Squadron::copySquad (const Ship **otherSquad, size_t otherSquadLength)
 
 void Squadron::increaseCapacity ()
 {
-
    const Ship** temp = new const Ship*[2*squadCapacity];
    swap(temp, squad);
    squadCapacity *= 2;
    copySquad(temp, squadSize);
    delete[] temp;
-}
-
-Squadron::~Squadron()
-{
-   freeSquad();
 }
 
 size_t Squadron::contains (const Ship* ship) const
@@ -141,8 +230,7 @@ Squadron& Squadron::opSelf (const Ship *ship, const SquadronOperation& op)
 
 Squadron Squadron::opCopy (const Ship *ship, const SquadronOperation& op) const
 {
-   size_t capacityToAllocate = ( squadSize < squadCapacity) ? squadCapacity : squadCapacity * 2;
-   Squadron newSquadron{name, capacityToAllocate, leader};
+   Squadron newSquadron(*this);
    newSquadron.opSelf(ship, op);
    return  newSquadron;
 }
@@ -155,74 +243,7 @@ void Squadron::freeSquad ()
    squadSize = 0;
 }
 
-Squadron& Squadron::operator+= (const Ship *ship)
-{
-   return addSelf(ship);
-}
 
-Squadron& Squadron::operator-= (const Ship *ship)
-{
-   return removeSelf(ship);;
-}
 
-Squadron Squadron::add (const Ship *ship) const
-{
-
-   return opCopy(ship, applyAdd);
-}
-
-Squadron Squadron::remove (const Ship *ship) const
-{
-   return opCopy(ship, applyRemove);
-}
-
-Squadron& Squadron::addSelf (const Ship *ship)
-{
-   return opSelf(ship, applyAdd);
-}
-
-Squadron& Squadron::removeSelf (const Ship *ship)
-{
-   return opSelf(ship, applyRemove);
-}
-
-void Squadron::setName (const string &name)
-{
-   this->name = name;
-}
-
-void Squadron::unsetLeader ()
-{
-   leader = nullptr;
-}
-
-void Squadron::setLeader (const Ship *leader)
-{
-   if(contains(leader) != numeric_limits<size_t>::max())
-   {
-      this->leader = leader;
-   }
-}
-
-double Squadron::consumption (double distance) const
-{
-   double totalConsumption = 0.0;
-
-   for(size_t i = 0; i < squadSize; ++i)
-   {
-      totalConsumption += squad[i]->consumption(distance);
-   }
-   return totalConsumption;
-}
-
-Squadron& Squadron::operator= (const Squadron &otherSquadron)
-{
-   if(this == &otherSquadron) return *this;
-
-   freeSquad();
-   init(otherSquadron.name, otherSquadron.squadCapacity, otherSquadron.leader);
-   copySquad(otherSquadron.squad, otherSquadron.squadSize);
-   return *this;
-}
 
 

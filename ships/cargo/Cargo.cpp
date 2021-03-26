@@ -2,7 +2,7 @@
  -----------------------------------------------------------------------------------
  Laboratoire : 02
  Fichier     : Cargo.cpp
- Auteur(s)   : Forestier Quentin & Melvyn Herzig
+ Auteur(s)   : Forestier Quentin & Herzig Melvyn
  Date        : 17/03/2021
  -----------------------------------------------------------------------------------
  */
@@ -16,24 +16,26 @@
 
 using namespace std;
 
-Cargo::Cargo(unsigned int count, double loadWeight, const std::string& nickname)
- : super(count, nickname), loadWeight(loadWeight)
+Cargo::Cargo (unsigned int count, double loadWeight, const std::string &nickname)
+        : super(count, nickname), loadWeight(loadWeight)
 {}
 
-std::ostream& Cargo::toStream(std::ostream& os) const
+std::ostream &Cargo::toStream (std::ostream &os) const
 {
-    return super::toStream(os) << endl << "\t cargo : " << loadWeight << " tons (max : " << getMaxCargoWeight() << ")";
+   return super::toStream(os) << endl << "\t cargo : " << loadWeight << " tons (max : " << getMaxLoadWeight() << ")";
 }
 
 void Cargo::setLoadWeight (double loadWeight)
 {
-   if(loadWeight > getMaxCargoWeight())
+   if (loadWeight > getMaxLoadWeight() || loadWeight < 0)
    {
       // Formattage du poids avec deux décimales.
       ostringstream stringStream;
-      stringStream << fixed << setprecision(2) << getMaxCargoWeight();
-      throw invalid_argument("Load weight must be smaller than " + stringStream.str());
+      stringStream << fixed << setprecision(2) << getMaxLoadWeight();
+      throw invalid_argument("Load weight must be smaller than " + stringStream.str() + " and >= 0");
    }
+
+   this->loadWeight = loadWeight;
 }
 
 double Cargo::getWeight () const

@@ -2,7 +2,7 @@
  -----------------------------------------------------------------------------------
  Laboratoire : 02
  Fichier     : SquadronRemove.h
- Auteur(s)   : Forestier Quentin & Melvyn Herzig
+ Auteur(s)   : Forestier Quentin & Herzig Melvyn
  Date        : 24/03/2021
 
  But         : Implémente la méthode qui permet d'enlever un vaisseau de
@@ -15,13 +15,24 @@
 #ifndef LABO2_SQUADRONREMOVE_H
 #define LABO2_SQUADRONREMOVE_H
 
-#include "SquadronOperation.h"
+#include "SquadronOperation.h" // SquadronOperation
 
+/**
+ * @brief Classe définissant la procédure de retrait d'un vaisseau.
+ * @authors Forestier Quentin et Herzig Melvyn
+ * @version 1.0.0
+ */
 class SquadronRemove : public SquadronOperation
 {
-public:
+private:
+   /**
+   * @brief Retire un vaisseau de l'escadrille.
+   * @param squadron Escadrille concernée.
+   * @param ship Vaisseau impliqué.
+   * @throws invalid_argument si ship est nullptr.
+   * @details Le vaisseau retiré est remplacé par le dernier dans le tableau.
+   */
    virtual void operator()(Squadron& squadron, const Ship* ship) const;
 };
-
 
 #endif //LABO2_SQUADRONREMOVE_H
