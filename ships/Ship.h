@@ -65,8 +65,7 @@ public:
    /**
     * @brief destructeur.
     */
-   virtual ~Ship()
-   {}
+   virtual ~Ship() = default;
 
    /**
     * @brief Mutateur du nom du vaisseau.

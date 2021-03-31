@@ -6,7 +6,7 @@
  Date        : 24/03/2021
 
  But         : Implémente la méthode qui permet d'ajouter un vaisseau de
-               l'escadrille.
+               l'escadron.
 
  Compilateur : MinGW-g++ 6.3.0
  -----------------------------------------------------------------------------------
@@ -30,7 +30,7 @@ private:
     * @authors Forestier Quentin et Herzig Melvyn
     * @version 1.0.0
     */
-   virtual void operator()(Squadron& squadron, const Ship* ship) const;
+   void operator()(Squadron& squadron, const Ship* ship) const override;
 };
 
 #endif //LABO2_SQUADRONADD_H

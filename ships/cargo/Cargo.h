@@ -45,17 +45,11 @@ public:
    Cargo (unsigned id, double loadWeight, const std::string &nickname = "");
 
    /**
-   * @brief Destructeur.
-   */
-   virtual ~Cargo()
-   {}
-
-   /**
    * @brief Insère un cargo dans un flux.
    * @param os Flux recevant le cargo.
    * @return Retourne le flux avec le cargo inséré.
    */
-   virtual std::ostream &toStream (std::ostream &os) const;
+   std::ostream &toStream (std::ostream &os) const override;
 
    /**
     * @brief Initialise le poids du chargement du cargo.
@@ -68,7 +62,7 @@ public:
     * @brief Accesseur poids total du cargo.
     * @return Retourne le poids total du cargo (tonnes)
     */
-   virtual double getWeight () const;
+   double getWeight () const override;
 
    /**
     * @brief Accesseur poids de chargement maximal du cargo.

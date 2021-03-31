@@ -6,7 +6,7 @@
  Date        : 24/03/2021
 
  But         : Implémente la méthode qui permet d'enlever un vaisseau de
-               l'escadrille.
+               l'escadron.
 
  Compilateur : MinGW-g++ 6.3.0
  -----------------------------------------------------------------------------------
@@ -26,13 +26,13 @@ class SquadronRemove : public SquadronOperation
 {
 private:
    /**
-   * @brief Retire un vaisseau de l'escadrille.
-   * @param squadron Escadrille concernée.
+   * @brief Retire un vaisseau de l'escadron.
+   * @param squadron Escadron concernée.
    * @param ship Vaisseau impliqué.
    * @throws invalid_argument si ship est nullptr.
    * @details Le vaisseau retiré est remplacé par le dernier dans le tableau.
    */
-   virtual void operator()(Squadron& squadron, const Ship* ship) const;
+   void operator()(Squadron& squadron, const Ship* ship) const override;
 };
 
 #endif //LABO2_SQUADRONREMOVE_H

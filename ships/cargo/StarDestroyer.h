@@ -59,34 +59,28 @@ public:
    StarDestroyer (double loadWeight = 0, const std::string &nickname = "");
 
    /**
-   * @brief Destructeur.
-   */
-   virtual ~StarDestroyer()
-   {}
-
-   /**
    * @brief Accesseurs de la vitesse.
    * @return Retourne la vitesse des Star Dreadnought
    */
-   virtual unsigned getSpeed () const;
+   unsigned getSpeed () const override;
 
    /**
     * @brief Accesseurs du modèle.
     * @return Retourne le modèle des Star Dreadnought
     */
-   virtual std::string getModel () const;
+   std::string getModel () const override;
 
    /**
     * @brief Accesseurs du poids maximal.
     * @return Retourne le poids maximal des Star Dreadnought
     */
-   virtual double getMaxLoadWeight () const;
+   double getMaxLoadWeight () const override;
 
    /**
     * @brief Accesseurs du poids à vide.
     * @return Retourne le poids des Star Dreadnought
     */
-   virtual double getEmptyWeight () const;
+   double getEmptyWeight () const override;
 };
 
 

@@ -154,16 +154,16 @@ void testShips()
         << normalShuttle     << endl << endl;
 
    try { normalDestroyer.setLoadWeight(1000000000000); }
-   catch (invalid_argument e) { cout << "(Destroyer) Poids trop grand, exception attrapee" << endl;}
+   catch (const invalid_argument& e) { cout << "(Destroyer) Poids trop grand, exception attrapee" << endl;}
 
    try { normalShuttle.setLoadWeight(1000000000000); }
-   catch (invalid_argument e) { cout << "(Shuttle) Poids trop grand, exception attrapee" << endl;}
+   catch (const invalid_argument& e) { cout << "(Shuttle) Poids trop grand, exception attrapee" << endl;}
 
    try { normalDestroyer.setLoadWeight(-1); }
-   catch (invalid_argument e) { cout << "(Destroyer) Poids negatif, exception attrapee" << endl;}
+   catch (const invalid_argument& e) { cout << "(Destroyer) Poids negatif, exception attrapee" << endl;}
 
    try { normalShuttle.setLoadWeight(-1); }
-   catch (invalid_argument e) { cout << "(Shuttle) Poids negatif, exception attrapee" << endl << endl;}
+   catch (const invalid_argument& e) { cout << "(Shuttle) Poids negatif, exception attrapee" << endl << endl;}
 
    cout << "--------------------------------------------" << endl;
    cout << "Test set loadWeight sur vaisseaux constants" << endl;
@@ -204,17 +204,17 @@ void testSquad()
    cout << "Ajout de vaisseau avec operateur +           " << endl;
    cout << "---------------------------------------------" << endl;
    const Squadron constNewSquad1 = &constShuttle + constSquadnamed;
-   cout << "Nouvelle escadrille " << constNewSquad1 << endl;
-   cout << "Escadrille de base  " << normalNamedSquad << endl;
+   cout << "Nouvelle escadron " << constNewSquad1 << endl;
+   cout << "Escadron de base  " << normalNamedSquad << endl;
 
    Squadron normalNewSquad1 = &constShuttle + normalNamedSquad;
-   cout << "Nouvelle escadrille " << normalNewSquad1 << endl;
-   cout << "Escadrille de base  " << normalNamedSquad << endl;
+   cout << "Nouvelle escadron " << normalNewSquad1 << endl;
+   cout << "Escadron de base  " << normalNamedSquad << endl;
 
    try{ nullptr + constNewSquad1; }
-   catch (invalid_argument){ cout << "retrait nullptr: exception attrappee" << endl; }
+   catch (const invalid_argument& e){ cout << "retrait nullptr: exception attrappee" << endl; }
    try{ nullptr + normalNewSquad1; }
-   catch (invalid_argument){ cout << "retrait nullptr: exception attrappee" << endl; }
+   catch (const invalid_argument& e){ cout << "retrait nullptr: exception attrappee" << endl; }
 
    // Retrait de vaisseau op -
    // Test l'opérateur ship - squad test également squad - ship , remove, opCopy
@@ -222,17 +222,17 @@ void testSquad()
    cout << "Retrait de vaisseau avec operateur -           " << endl;
    cout << "---------------------------------------------" << endl;
    Squadron constNewSquad2 = &constShuttle - constNewSquad1;
-   cout << "Nouvelle escadrille " << constNewSquad2 << endl;
-   cout << "Escadrille de base  " << normalNamedSquad << endl;
+   cout << "Nouvelle escadron " << constNewSquad2 << endl;
+   cout << "Escadron de base  " << normalNamedSquad << endl;
 
    Squadron normalNewSquad2 = &normalShuttle - normalNewSquad1;
-   cout << "Nouvelle escadrille " << normalNewSquad2 << endl;
-   cout << "Escadrille de base  " << normalNamedSquad << endl;
+   cout << "Nouvelle escadron " << normalNewSquad2 << endl;
+   cout << "Escadron de base  " << normalNamedSquad << endl;
 
    try{ nullptr - constNewSquad2; }
-   catch (invalid_argument){ cout << "retrait nullptr: exception attrappee" << endl; }
+   catch (const invalid_argument& e){ cout << "retrait nullptr: exception attrappee" << endl; }
    try{ nullptr - normalNewSquad2; }
-   catch (invalid_argument){ cout << "retrait nullptr: exception attrappee" << endl; }
+   catch (const invalid_argument& e){ cout << "retrait nullptr: exception attrappee" << endl; }
 
    // Ajout de vaisseau op +
    // Test l'opérateur squad += ship test également addSelf, opSelf
@@ -242,10 +242,10 @@ void testSquad()
    //const Squadron constNewSquad3 = constSquadnamed += &constDestroyer;
 
    normalNamedSquad += &normalDestroyer;
-   cout << "Nouvelle escadrille " << normalNamedSquad << endl;
+   cout << "Nouvelle escadron " << normalNamedSquad << endl;
 
    try{  normalNamedSquad += nullptr; }
-   catch (invalid_argument){ cout << "retrait nullptr: exception attrappee" << endl; }
+   catch (const invalid_argument& e){ cout << "retrait nullptr: exception attrappee" << endl; }
 
    // Retrait de vaisseau
    // Test l'opérateur ship - squad test également squad - ship , remove, opCopy
@@ -255,10 +255,10 @@ void testSquad()
    //const Squadron constNewSquad3 = constSquadnamed += &constDestroyer;
 
    normalNamedSquad -= &normalDestroyer;
-   cout << "Nouvelle escadrille " << normalNamedSquad << endl;
+   cout << "Nouvelle escadron " << normalNamedSquad << endl;
 
    try{  normalNamedSquad -= nullptr; }
-   catch (invalid_argument){ cout << "retrait nullptr: exception attrappee" << endl; }
+   catch (const invalid_argument& e){ cout << "retrait nullptr: exception attrappee" << endl; }
 
    cout << "---------------------------------------------" << endl;
    cout << "Set name                                     " << endl;

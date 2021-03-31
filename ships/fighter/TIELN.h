@@ -56,28 +56,22 @@ public:
    TIELN (const std::string &nickname = "");
 
    /**
-   * @brief Destructeur.
-   */
-   virtual ~TIELN()
-   {}
-
-   /**
     * @brief Accesseurs du poids.
     * @return Retourne le poids des vaisseaux TIE
     */
-   virtual double getWeight () const;
+   double getWeight () const override;
 
    /**
     * @brief Accesseurs de la vitesse.
     * @return Retourne la vitesse des vaisseaux TIE
     */
-   virtual unsigned getSpeed () const;
+   unsigned getSpeed () const override;
 
    /**
     * @brief Accesseurs de la vitesse.
     * @return Retourne le modèle des vaisseaux TIE
     */
-   virtual std::string getModel () const;
+   std::string getModel () const override;
 };
 
 

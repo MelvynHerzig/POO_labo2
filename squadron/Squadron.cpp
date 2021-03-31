@@ -16,10 +16,7 @@
 #include "operation/SquadronAdd.h"       // SquadronAdd
 #include "Squadron.h"
 
-
-
 using namespace std;
-
 
 // ----------------- Constantes statiques -------------------
 const SquadronOperation& Squadron::APPLY_ADD    = SquadronAdd();

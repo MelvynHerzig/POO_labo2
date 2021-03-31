@@ -6,7 +6,7 @@
  Date        : 24/03/2021
 
  But         : Classe abstraite définissant la classe à implémenter
-               pour gérer l'ajout/suppression de vaisseaux dans l'escadrille.
+               pour gérer l'ajout/suppression de vaisseaux dans l'escadron.
 
  Compilateur : MinGW-g++ 6.3.0
  -----------------------------------------------------------------------------------
@@ -29,10 +29,18 @@ class Squadron;
 class SquadronOperation
 {
    friend Squadron;
+
+public:
+
+   /**
+    * @brief destructeur.
+    */
+   virtual ~SquadronOperation() = default;
+
 private:
    /**
-    * @brief Applique une transformation sur l'escadrille.
-    * @param squadron Escadrille concernée.
+    * @brief Applique une transformation sur l'escadron.
+    * @param squadron Escadron concernée.
     * @param ship Vaisseau impliqué.
     * @throws invalid_argument (par SquadAdd et SquadRemove)
     */

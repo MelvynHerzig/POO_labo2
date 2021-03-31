@@ -22,7 +22,7 @@ std::ostream &operator<<(std::ostream &os, const Ship &ship)
 Ship::Ship(unsigned int id, const std::string& nickname) : id(id), nickname(nickname)
 {}
 
-void Ship::setNickname (const std::string &nickname)
+void Ship::setNickname (const std::string& nickname)
 {
    this->nickname = nickname;
 }

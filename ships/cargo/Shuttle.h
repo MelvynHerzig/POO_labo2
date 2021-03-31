@@ -59,34 +59,28 @@ public:
    Shuttle (double loadWeight = 0, const std::string &nickname = "");
 
    /**
-   * @brief Destructeur.
-   */
-   virtual ~Shuttle()
-   {}
-
-   /**
     * @brief Accesseurs de la vitesse.
     * @return Retourne la vitesse des Navettes impériales
     */
-   virtual unsigned getSpeed () const;
+   unsigned getSpeed () const override;
 
    /**
     * @brief Accesseurs du modèle.
     * @return Retourne le modèle des Navettes impériales
     */
-   virtual std::string getModel () const;
+   std::string getModel () const override;
 
    /**
     * @brief Accesseurs du poids maximal.
     * @return Retourne le poids maximal des Navettes impériales
     */
-   virtual double getMaxLoadWeight () const;
+   double getMaxLoadWeight () const override;
 
    /**
     * @brief Accesseurs du poids à vide.
     * @return Retourne le poids des Navettes impériales
     */
-   virtual double getEmptyWeight () const;
+   double getEmptyWeight () const override;
 };
 
 
