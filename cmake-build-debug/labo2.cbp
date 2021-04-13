@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug"/>
+				<Option working_dir="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="labo2">
-				<Option output="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/labo2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug"/>
+				<Option output="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/labo2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -33,15 +33,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 labo2"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 labo2"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="labo2/fast">
-				<Option output="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/labo2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug"/>
+				<Option output="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/labo2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -55,94 +55,94 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 labo2/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 labo2/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug"/>
+				<Option working_dir="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug"/>
+				<Option working_dir="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/main.cpp">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/main.cpp">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/Ship.cpp">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/ships/Ship.cpp">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/Ship.h">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/ships/Ship.h">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/Cargo.cpp">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/ships/cargo/Cargo.cpp">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/Cargo.h">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/ships/cargo/Cargo.h">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/Shuttle.cpp">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/ships/cargo/Shuttle.cpp">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/Shuttle.h">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/ships/cargo/Shuttle.h">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/StarDestroyer.cpp">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/ships/cargo/StarDestroyer.cpp">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/cargo/StarDestroyer.h">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/ships/cargo/StarDestroyer.h">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/fighter/TIEIN.cpp">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/ships/fighter/TIEIN.cpp">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/fighter/TIEIN.h">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/ships/fighter/TIEIN.h">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/fighter/TIELN.cpp">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/ships/fighter/TIELN.cpp">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/ships/fighter/TIELN.h">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/ships/fighter/TIELN.h">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/Squadron.cpp">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/squadron/Squadron.cpp">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/Squadron.h">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/squadron/Squadron.h">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/operation/SquadronAdd.cpp">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/squadron/operation/SquadronAdd.cpp">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/operation/SquadronAdd.h">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/squadron/operation/SquadronAdd.h">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/operation/SquadronOperation.h">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/squadron/operation/SquadronOperation.h">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/operation/SquadronRemove.cpp">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/squadron/operation/SquadronRemove.cpp">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/squadron/operation/SquadronRemove.h">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/squadron/operation/SquadronRemove.h">
 			<Option target="labo2"/>
 		</Unit>
-		<Unit filename="C:/Users/melvy/Desktop/Application/Drive/HEIG_VD/4em semestre/POO2/labo2/CMakeLists.txt">
+		<Unit filename="D:/Google Drive/HEIG-VD/4eme semestre/POO2/Labos/POO2_labo2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
